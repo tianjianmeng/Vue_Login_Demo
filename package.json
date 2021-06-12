@@ -12,7 +12,8 @@
     "install": "^0.13.0",
     "npm": "^7.17.0",
     "vue": "^2.6.10",
-    "vue-resource": "^1.5.2"
+    "vue-resource": "^1.5.2",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",

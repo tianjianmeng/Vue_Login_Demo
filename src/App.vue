@@ -1,27 +1,31 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+		<p>{{message}}</p>
+		<input v-model="username" placeholder="username"><br/>
+		<input v-model="password" placeholder="password"><br/>
+		<button v-on:click="login">login</button>
+		<div>
+			<router-view></router-view>
+		</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+	data(){
+  			return{
+  				message:'please login',
+  				username: '',
+  				password: ''
+  			}
+  		},methods:{
+			login:function(){
+				this.$router.push({ path: '/success' });
+			}
+		}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
