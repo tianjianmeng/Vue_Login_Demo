@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import success from '@/components/success.vue'
 import home from '../components/home.vue'
 import App from '../App.vue'
+import login from '../components/login.vue'
 Vue.use(Router)
 export default new Router({
 	mode: 'history',
@@ -10,13 +11,16 @@ export default new Router({
 		  		  path: '/',
 		  		  name: 'App',
 		  		  component: App,
+
 					},{
 				  path: '/success',
 				  name: 'success',
-				  component: success
+				  component: success,
+				  
 					},{
 				  path: '/home',
 				  name: 'home',
-				  component: home
+				  component: home,
+				  
 				}]
 })

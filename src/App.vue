@@ -9,9 +9,16 @@ import login from './components/login.vue'
 
 export default {
   name: 'app',
-  components: {
-    login
-  }
+  
+    data(){
+      return {
+        
+      }
+    },
+    components: {
+      login
+    }
+
 }
 </script>
 
