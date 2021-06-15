@@ -5,20 +5,8 @@
 </template>
 
 <script>
-import login from './components/login.vue'
-
 export default {
-  name: 'app',
-  
-    data(){
-      return {
-        
-      }
-    },
-    components: {
-      login
-    }
-
+  name: 'app'
 }
 </script>
 
