@@ -11,7 +11,13 @@ export default new Router({
 		  		  path: '/',
 		  		  name: 'App',
 		  		  component: App,
-
+				  redirect: { name: 'login' },
+					},{
+						
+				  path: '/login',
+				  name: 'login',
+				  component: login,
+				  
 					},{
 				  path: '/success',
 				  name: 'success',
